@@ -1,0 +1,20 @@
+Primeiro_andar = int(input())
+Segundo_andar = int(input())
+Terceiro_andar = int(input())
+Minutos = 0
+maquina_de_café = 0
+if Primeiro_andar > Segundo_andar and Primeiro_andar > Terceiro_andar:
+  maquina_de_café = 1
+if Primeiro_andar < Segundo_andar and Segundo_andar > Terceiro_andar:
+  maquina_de_café = 2
+if Primeiro_andar < Terceiro_andar and Segundo_andar < Terceiro_andar:
+  maquina_de_café = 3
+
+if maquina_de_café == 1:
+  Minutos = 2 * Segundo_andar + 4 * Terceiro_andar
+elif maquina_de_café == 2:
+  Minutos = 2 * Primeiro_andar + 2 * Terceiro_andar
+elif maquina_de_café == 3:
+  Minutos = 4 * Primeiro_andar + 2 * Segundo_andar
+
+print(Minutos)
