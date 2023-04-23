@@ -1,0 +1,6 @@
+competente_1 = int(input())
+competente_2 = int(input())
+
+resultado = competente_1 * competente_2
+
+print('PROD =',resultado)
