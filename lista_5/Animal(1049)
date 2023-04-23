@@ -1,0 +1,29 @@
+invertebrado_ou_vertebrado = input()
+Especie = input()
+Comer_Oq = input()
+
+if invertebrado_ou_vertebrado == 'vertebrado':
+ if Especie == 'ave':
+  if Comer_Oq == 'carnivoro':
+    print('aguia')
+  elif Comer_Oq == 'onivoro':
+    print('pomba')
+if invertebrado_ou_vertebrado == 'vertebrado':
+ if Especie == 'mamifero':
+  if Comer_Oq == 'onivoro':
+    print('homem')
+  elif Comer_Oq == 'herbivoro':
+    print('vaca')
+if invertebrado_ou_vertebrado == 'invertebrado':
+ if Especie == 'inseto':
+  if Comer_Oq == 'hematofago':
+    print('pulga')
+  elif Comer_Oq == 'herbivoro':
+    print('lagarta')
+if invertebrado_ou_vertebrado == 'invertebrado':
+ if Especie == 'anelideo':
+  if Comer_Oq == 'hematofago':
+    print('sanguessuga')
+  elif Comer_Oq == 'onivoro':
+    print('minhoca')
+    
