@@ -1,0 +1,7 @@
+linha1 = input().split()
+pretende_correr = int(linha1[0])
+tamanho_da_pista = int(linha1[1])
+
+
+ponto_de_termino = pretende_correr % tamanho_da_pista
+print(ponto_de_termino)
