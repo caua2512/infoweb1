@@ -1,0 +1,7 @@
+local_de_pouso = input().split()
+X = int(local_de_pouso[0])
+Y = int(local_de_pouso[1])
+if X >= 0 and X <= 432 and Y >= 0 and Y <= 468:
+  print('dentro')
+else:
+  print('fora')
