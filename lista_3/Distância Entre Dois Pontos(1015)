@@ -1,0 +1,10 @@
+Linha1 = input().split()
+x1 = float(Linha1[0])
+y1 = float(Linha1[1])
+Linha2 = input().split()
+x2 = float(Linha2[0])
+y2 = float(Linha2[1])
+
+Distancia = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+print(f'{Distancia:.4f}')
