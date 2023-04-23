@@ -1,0 +1,12 @@
+linha1 = input().split()
+a = float(linha1[0])
+b = float(linha1[1])
+c = float(linha1[2])
+
+if a == 0 or (b**2 - 4*a*c) < 0:
+  print('Impossivel calcular')
+else: 
+ r1 = (-b + (b**2 - 4*a*c)**0.5) / (2*a)
+ r2 = (-b - (b**2 - 4*a*c)**0.5) / (2*a)
+ print(f'R1 = {r1:.5f}')
+ print(f'R2 = {r2:.5f}') 
