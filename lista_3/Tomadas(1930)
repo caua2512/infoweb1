@@ -1,0 +1,8 @@
+linha1 = input().split()
+t1 = int(linha1[0])
+t2 = int(linha1[1])
+t3 = int(linha1[2])
+t4 = int(linha1[3])
+
+numero = t1 + t2 + t3 + t4 - 3
+print(numero)
