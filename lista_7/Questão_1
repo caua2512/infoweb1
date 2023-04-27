@@ -1,0 +1,10 @@
+x = int(input())
+y = int(input())
+def maior(x, y):
+  maiorzin = 0
+  if x < y:
+   maiorzin = y
+  if y < x:
+   maiorzin = x
+  return maiorzin
+(maior(x,y))
