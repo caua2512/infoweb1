@@ -1,0 +1,27 @@
+class media:
+  def __init__(self):
+    self.nomeDaDisciplina = " "
+    self.nota1 = 0
+    self.nota2 = 0
+    self.nota3 = 0
+    self.nota4 = 0
+    self.prova_final = 0
+  def calc_media_parcial(self):
+    return (self.nota1 * 2 + self.nota2 * 2 + self.nota3 * 3 + self.nota4 * 3) / 10
+  def calc_media_final(self):
+    return ((self.nota1 * 2 + self.nota2 * 2 + self.nota3 * 3 + self.nota4 * 3) / 10 + self.prova_final) / 2
+x = media()
+x.nomeDaDisciplina = str(input())
+x.nota1 = int(input())
+x.nota2 = int(input())
+x.nota3 = int(input())
+x.nota4 = int(input())
+x.prova_final = int(input())
+print(x.nomeDaDisciplina)
+print(x.nota1)
+print(x.nota2)
+print(x.nota3)
+print(x.nota4)
+print(x.calc_media_parcial())
+if x.calc_media_parcial() < 60:
+  print(x.calc_media_final())
